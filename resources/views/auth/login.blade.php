@@ -147,17 +147,18 @@
         <div class="login-section">
             <img src="{{ asset('images/pesat.jpg') }}" alt="Logo SMK Pesat" class="logo">
             <h2>Selamat Datang!</h2>
-            <form method="POST" action="{{ route('login') }}">
-                @csrf
-                <input type="email" name="email" placeholder="Email Address" required autofocus>
-                <input type="password" name="password" placeholder="Password" required>
-                <button type="submit">Sign In</button>
-            </form>
+           <form method="POST" action="{{ route('login') }}">
+    @csrf
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+</form>
+
         </div>
         <div class="register-section">
             <img src="{{ asset('images/3siswa.png') }}" alt="Gambar Siswa">
             <h2>Hello, Admin!</h2>
-            <p>Silakan login untuk mengakses dashboard SMK Pesat.</p>
+            <p>Silakan login untuk mengakses dashboard Evaluasi Guru SMK Pesat.</p>
         </div>
     </div>
 </body>
